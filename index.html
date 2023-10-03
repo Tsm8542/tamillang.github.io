@@ -1,0 +1,139 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tamil</title>
+</head>
+<script src="script.js"></script>
+<style>
+    html{
+        background-color: black;
+        color: aqua;
+    }
+    .menu{
+        font-size: x-large;
+        text-align: center;
+    }
+    .standard,.page_range{
+        display: inline-block;
+    }
+    iframe{
+        width: 100%;
+        height: 600px;
+        border: none;
+        margin-top: 2px;
+    }
+    select{
+        margin: 2px;
+        text-align: center;
+        background-color: black;
+        color: cyan;
+        font-size: x-large;
+        border-radius: 10px;
+        border: 3px solid red;
+    }
+    select:focus{
+        border: 1px solid yellow;
+    }
+    .download{
+        display: none;
+        color: black;
+        padding: 1%;
+        margin: 2%;
+        border: 3px solid blue;
+        border-radius: 10px;
+    }
+    .download a{
+        text-decoration: none;
+        font-size: x-large;
+        color: white;
+    }
+    @media only screen and (max-width: 385px) {
+        .standard,.page_range{
+            display: block;
+        }
+        select{
+            width: 90%;
+        }
+        iframe{
+            width: 100%;
+            height: 775px;
+        }
+    }
+</style>
+<body>
+    <div class="menu">
+        <div class="genre">
+            <select id="genre" onchange="s()">
+                <option value="balbharti">Balbharti</option>
+                <option value="download">Downloads</option>
+            </select>
+        </div>
+        <div class="standard">
+            <!--label for="branch">Branch:</label-->
+            <select id="standard" onchange="x()">
+                <option value="std1">Std 1</option>
+                <option value="std2">Std 2</option>
+                <option value="std3">Std 3</option>
+                <option value="std4">Std 4</option>
+                <option value="std5">Std 5</option>
+                <option value="std6">Std 6</option>
+                <option value="std7">Std 7</option>
+            </select>
+        </div>
+        <div class="page_range">
+            <!--label for="topic">Topic:</label-->
+            <select id="page_range" onchange="z()">
+                <option value="std_1_pr_1-30">1-30</option>
+                <option value="std_1_pr_31-60">31-60</option>
+                <option value="std_1_pr_61-90">61-90</option>
+                <option value="all1">All</option>
+            </select>
+        </div>
+    </div>
+    <iframe src="Balbharti Tamil Std 1/pr_1-30.html" id="frame"></iframe>
+    <div class="download">
+        <header style="text-align: center;color: red;">
+            <h1>Download the textbooks in PDF format:</h1>
+        </header>
+        <h2 style="color: lime;">Balbharti Textbooks:</h2>
+        <ol style="font-size: x-large; color: lime;">
+            <li>
+                <a href="Downloads/Balbharti Tamil Std 1.pdf" download="
+                Balbharti Tamil Std 1" title="Balbharti Tamil Std 1">Download Balbharti Tamil Std 1 (.pdf)</a>
+            </li>
+            <li>
+                <a href="Downloads/Balbharti Tamil Std 2.pdf" download="
+                Balbharti Tamil Std 2" title="Balbharti Tamil Std 2">Download Balbharti Tamil Std 2 (.pdf)</a>
+            </li>
+            <li>
+                <a href="Downloads/Balbharti Tamil Std 3.pdf" download="
+                Balbharti Tamil Std 3" title="Balbharti Tamil Std 3">Download Balbharti Tamil Std 3 (.pdf)</a>
+            </li>
+            <li>
+                <a href="Downloads/Balbharti Tamil Std 4.pdf" download="
+                Balbharti Tamil Std 4" title="Balbharti Tamil Std 4">Download Balbharti Tamil Std 4 (.pdf)</a>
+            </li>
+            <li>
+                <a href="Downloads/Balbharti Tamil Std 5.pdf" download="
+                Balbharti Tamil Std 5" title="Balbharti Tamil Std 5">Download Balbharti Tamil Std 5 (.pdf)</a>
+            </li>
+            <li>
+                <a href="Downloads/Balbharti Tamil Std 6.pdf" download="
+                Balbharti Tamil Std 6" title="Balbharti Tamil Std 6">Download Balbharti Tamil Std 6 (.pdf)</a>
+            </li>
+            <li>
+                <a href="Downloads/Balbharti Tamil Std 7.pdf" download="
+                Balbharti Tamil Std 7" title="Balbharti Tamil Std 7">Download Balbharti Tamil Std 7 (.pdf)</a>
+            </li>
+        </ol>
+        <h2 style="color: lime;">All Textbooks:</h2>
+        <ol style="font-size: x-large; color: lime;">
+            <li>
+                <a href="Downloads/Tamil.zip" download="Tamil">Download Tamil Language - All .pdf in one (.zip)</a>
+            </li>
+        </ol>
+    </div>
+</body>
+</html>
